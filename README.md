@@ -10,18 +10,18 @@ Welcome to Pimp My Shell! This time, featuring [@devMozao](https://twitter.com/d
 
 ---
 
-<center>![Screenshot Full](./screenshots/screenshot_full.png)</center>
+<center> ![Screenshot Full](./screenshots/screenshot_full.png) </center>
 
 ---
 
-<center>![Screenshot Full](./screenshots/screenshot_terminal.png)</center>
+<center> ![Screenshot Full](./screenshots/screenshot_terminal.png) </center>
 
 ---
 
-<center>![Screenshot Full](./screenshots/screenshot_vscode.png)</center>
+<center> ![Screenshot Full](./screenshots/screenshot_vscode.png) </center>
 
 ---
 
-<center>![Screenshot Full](./screenshots/screenshot_files.png)</center>
+<center> ![Screenshot Full](./screenshots/screenshot_files.png) </center>
 
 ---
