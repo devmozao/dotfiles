@@ -10,13 +10,13 @@ Welcome to Pimp My Shell! This time, featuring [@devMozao](https://twitter.com/d
 
 ### SETUP
 
-**OS Distro**: [Linux Mint](https://linuxmint.com)
-**OS Theme**: [Nord Theme](https://www.nordtheme.com)
-**Terminal**: [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
-**Terminal Font:** [Nerd Fonts](https://www.nerdfonts.com)
-**Editor:** [VS Code](https://code.visualstudio.com)
-**Editor Theme:** [Nord Theme](https://github.com/arcticicestudio/nord-visual-studio-code)
-**Editor Font:** [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+- **OS Distro**: [Linux Mint](https://linuxmint.com)
+- **OS Theme**: [Nord Theme](https://www.nordtheme.com)
+- **Terminal**: [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
+- **Terminal Font:** [Nerd Fonts](https://www.nerdfonts.com)
+- **Editor:** [VS Code](https://code.visualstudio.com)
+- **Editor Theme:** [Nord Theme](https://github.com/arcticicestudio/nord-visual-studio-code)
+- **Editor Font:** [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 
 ---
 
