@@ -10,18 +10,26 @@ Welcome to Pimp My Shell! This time, featuring [@devMozao](https://twitter.com/d
 
 ---
 
-<center> ![Screenshot Full](./screenshots/screenshot_full.png) </center>
+<p align="center">
+  <img alt="Screenshot Full" src="./screenshots/screenshot_full.png">
+</p>
 
 ---
 
-<center> ![Screenshot Full](./screenshots/screenshot_terminal.png) </center>
+<p align="center">
+  <img alt="Screenshot Terminal" src="./screenshots/screenshot_terminal.png">
+</p>
 
 ---
 
-<center> ![Screenshot Full](./screenshots/screenshot_vscode.png) </center>
+<p align="center">
+  <img alt="Screenshot VS Code" src="./screenshots/screenshot_vscode.png">
+</p>
 
 ---
 
-<center> ![Screenshot Full](./screenshots/screenshot_files.png) </center>
+<p align="center">
+  <img alt="Screenshot Files" src="./screenshots/screenshot_files.png">
+</p>
 
 ---
