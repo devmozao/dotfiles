@@ -1,0 +1,11 @@
+[user]
+	name = Diogo Fonseca
+	email = diogo.fonseca@maxxidata.com
+[diff]
+	tool = vscode
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[difftool "vscode"]
+	cmd = code --wait --diff

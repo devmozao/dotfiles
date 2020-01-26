@@ -1,0 +1,43 @@
+# Invisible Folders
+/.cache
+/.cinnamon
+/.config
+/.gnupg
+/.icons
+/.linuxmint
+/.local
+/.mozilla
+/.oh-my-zsh/
+/.pki
+/.themes
+/.vscode
+/.zinit
+# Visible Folders
+/Desktop
+/Documents
+/Downloads
+/Music
+/Pictures
+/Public
+/Templates
+/Videos
+# dotfiles ignored
+.bash_history
+.bash_logout
+.bashrc
+.dmrc
+.gtkrc-2.0
+.gtkrc-xfce
+.ICEauthority
+.nvidia-settings-rc
+.profile
+.shell.pre-oh-my-zsh
+.sudo_as_admin_successful
+.Xauthority
+.xinputrc
+.xsession-errors
+.xsession-errors.old
+.zcompdump
+.zcompdump-DreamMint-5.4.2
+.zsh_history
+
