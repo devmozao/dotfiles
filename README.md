@@ -12,32 +12,30 @@ Welcome to Pimp My Shell! This time, featuring [@devMozao](https://twitter.com/d
 
 ---
 
-<p align="center"> Terminal - VS Code - Files
+<p align="center">Terminal - VS Code - Files</p>
+<p align="center"> 
   <img alt="Screenshot Full" src="./screenshots/screenshot_full.png">
 </p>
 
 ---
 
-<p align="center"> Terminal | neofetch
+<p align="center">Terminal | neofetch</p>
+<p align="center">
   <img alt="Screenshot Terminal" src="./screenshots/screenshot_terminal.png">
 </p>
 
 ---
 
-<p align="center"> VS Code
+<p align="center">VS Code</p>
+<p align="center">
   <img alt="Screenshot VS Code" src="./screenshots/screenshot_vscode.png">
 </p>
 
 ---
 
-<p align="center"> Files
+<p align="center">Files</p>
+<p align="center">
   <img alt="Screenshot Files" src="./screenshots/screenshot_files.png">
 </p>
 
 ---
-
-<p align="center"> Files
-  <img alt="Screenshot Files" src="./screenshots/screenshot_files.png">
-</p>
-</>
-</background>
