@@ -1,0 +1,66 @@
+{
+  // telemetry settings
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  // startup file
+  "workbench.startupEditor": "none",
+  // menu hidden
+  "window.menuBarVisibility": "toggle",
+  // minimap
+  "editor.minimap.enabled": false,
+  // indentation
+  "editor.tabSize": 2,
+  // font settings
+  "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontSize": 13,
+  "editor.fontLigatures": true,
+  // theme
+  "workbench.colorTheme": "Nord",
+  "workbench.preferredDarkColorTheme": "Nord",
+  "workbench.preferredHighContrastColorTheme": "Nord",
+  "workbench.preferredLightColorTheme": "Nord",
+  // icon
+  "workbench.iconTheme": "material-icon-theme",
+  // cursor settings
+  "editor.cursorBlinking": "smooth",
+  // auto format code
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.fixAll.stylelint": true
+  },
+  // highlight modified tabs
+  "workbench.editor.highlightModifiedTabs": true,
+  // hide extension recommendations
+  "extensions.ignoreRecommendations": true,
+  // emmet settings
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact"
+  },
+  // git settings
+  "git.autofetch": true,
+  "git.fetchOnPull": true,
+  // package manager
+  "npm.packageManager": "yarn",
+  // bracket pair settings
+  "bracket-pair-colorizer-2.colorMode": "Consecutive",
+  "bracket-pair-colorizer-2.forceUniqueOpeningColor": false,
+  // vs intellicode settings
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // Standard settings
+  "javascript.validate.enable": false,
+  "standard.enable": true,
+  "standard.run": "onType",
+  "standard.autoFixOnSave": true,
+  "standard.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+  //
+}
