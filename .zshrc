@@ -12,7 +12,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE="nerdfont-complete"
 # Left and Right Elements
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_os_icon dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status ssh root_indicator background_jobs battery disk_usage ram time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv ssh root_indicator background_jobs battery disk_usage ram time)
 # Segments
 POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\ue0c6'
 POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='\ue0c6'
@@ -82,7 +82,7 @@ POWERLEVEL9K_TIME_BACKGROUND="black"
 POWERLEVEL9K_TIME_FOREGROUND="007"
 
 # Plugins
-plugins=(git)
+plugins=(git virtualenv)
 source $ZSH/oh-my-zsh.sh
 
 ### Added by Zinit's installer
@@ -90,13 +90,22 @@ if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing DHARMA Initiative Plugin Manager (zdharma/zinit)…%f"
     command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
     command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
-        print -P "%F{33}▓▒░ %F{34}Installation successful.%f" || \
-        print -P "%F{160}▓▒░ The clone has failed.%f"
+        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
+        print -P "%F{160}▓▒░ The clone has failed.%f%b"
 fi
+
 source "$HOME/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
-### End of Zinit installer's chunk
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zinit-zsh/z-a-patch-dl \
+    zinit-zsh/z-a-as-monitor \
+    zinit-zsh/z-a-bin-gem-node
+
+### End of Zinit's installer chunk
 
 # Plugins added by Zinit
 zplugin light zdharma/fast-syntax-highlighting
