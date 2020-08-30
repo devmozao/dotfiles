@@ -1,6 +1,10 @@
 [user]
-	name = Diogo Fonseca
-	email = devmozao@outlook.com
+	name = Diogo "Mozão" Fonseca
+	email = devmozao@outloook.com.br
+[core]
+	autocrlf = input
+[pull]
+	rebase = false
 [diff]
 	tool = vscode
 [merge]
