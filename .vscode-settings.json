@@ -3,19 +3,22 @@
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   // startup file
-  "workbench.startupEditor": "none",
+"workbench.startupEditor": "none",
+  // update on import files
+  "javascript.updateImportsOnFileMove.enabled": "always",
   // menu hidden
   "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 0,
   // minimap
   "editor.minimap.enabled": false,
   // indentation
   "editor.tabSize": 2,
   // font settings
-  "editor.fontFamily": "Jetbrains Mono",
-  "editor.fontSize": 13,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 12,
   "editor.fontLigatures": true,
   // theme
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Nord Deep",
   "workbench.preferredDarkColorTheme": "Nord",
   "workbench.preferredHighContrastColorTheme": "Nord",
   "workbench.preferredLightColorTheme": "Nord",
@@ -25,13 +28,16 @@
   "editor.cursorBlinking": "smooth",
   // auto format code
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "editor.formatOnType": true,
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.tslint": true,
     "source.fixAll.stylelint": true
   },
+  // compact folder view for single folder
+  "explorer.compactFolders": false,
+  "editor.quickSuggestions": true,
   // highlight modified tabs
   "workbench.editor.highlightModifiedTabs": true,
   // hide extension recommendations
@@ -44,23 +50,22 @@
   // git settings
   "git.autofetch": true,
   "git.fetchOnPull": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
   // package manager
   "npm.packageManager": "yarn",
-  // bracket pair settings
-  "bracket-pair-colorizer-2.colorMode": "Consecutive",
-  "bracket-pair-colorizer-2.forceUniqueOpeningColor": false,
   // vs intellicode settings
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   // Standard settings
   "javascript.validate.enable": false,
-  "standard.enable": true,
-  "standard.run": "onType",
-  "standard.autoFixOnSave": true,
-  "standard.validate": [
-    "javascript",
-    "javascriptreact",
-    "vue"
-  ],
-  //
+  // prettier settings
+  // "prettier.requireConfig": true,
+  
+  // "explorer.confirmDelete": false,
+  // "editor.linkedEditing": true,
+  // "html.format.endWithNewline": true,
+  // "html.format.indentInnerHtml": true,
+  // "html.format.indentHandlebars": true,
+  // "html.format.templating": true,
 }
