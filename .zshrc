@@ -1,93 +1,37 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/mozao/.oh-my-zsh"
+export ZSH="/root/.oh-my-zsh"
 
-# PowerLevel9k Customizations
-#neofetch
-# Theme
-ZSH_THEME="powerlevel9k/powerlevel9k"
-# PowerLevel9k Font
-POWERLEVEL9K_MODE="nerdfont-complete"
-# Left and Right Elements
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_os_icon dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv ssh root_indicator background_jobs battery disk_usage ram time)
-# Segments
-POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\ue0c6'
-POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='\ue0c6'
-POWERLEVEL9K_WHITESPACE_BETWEEN_LEFT_SEGMENTS='  '
-POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\ue0c7'
-POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR='\ue0c7'
-POWERLEVEL9K_WHITESPACE_BETWEEN_RIGHT_SEGMENTS='  '
-# Truncate
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
-# Prefix
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='%F{007}╭─%F{007}'
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%F{007}╰%f '
-# OS Icon
-POWERLEVEL9K_CUSTOM_OS_ICON="echo $'\uE781'"
-POWERLEVEL9K_CUSTOM_OS_ICON_BACKGROUND="007"
-POWERLEVEL9K_CUSTOM_OS_ICON_FOREGROUND="black"
-# Dir
-POWERLEVEL9K_DIR_HOME_BACKGROUND="black"
-POWERLEVEL9K_DIR_HOME_FOREGROUND="007"
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="black"
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="007"
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="black"
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="007"
-# Status
-POWERLEVEL9K_STATUS_VERBOSE=false
-POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
-POWERLEVEL9K_STATUS_OK_BACKGROUND="black"
-POWERLEVEL9K_STATUS_OK_FOREGROUND="007"
-POWERLEVEL9K_STATUS_ERROR_BACKGROUND="black"
-POWERLEVEL9K_STATUS_ERROR_FOREGROUND="red"
-# Wifi
-#POWERLEVEL9K_CUSTOM_WIFI_SIGNAL="echo signal: \$(nmcli device wifi | grep yes | awk "{print \$8}")"
-#POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_BACKGROUND="blue"
-#POWERLEVEL9K_CUSTOM_WIFI_SIGNAL_FOREGROUND="yellow"
-# Battery
-POWERLEVEL9K_BATTERY_LOW_BACKGROUND="black"
-POWERLEVEL9K_BATTERY_CHARGING_BACKGROUND="black"
-POWERLEVEL9K_BATTERY_CHARGED_BACKGROUND="black"
-POWERLEVEL9K_BATTERY_DISCONNECTED_BACKGROUND="black"
-POWERLEVEL9K_BATTERY_LOW_FOREGROUND="007"
-POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND="007"
-POWERLEVEL9K_BATTERY_CHARGED_FOREGROUND="007"
-POWERLEVEL9K_BATTERY_DISCONNECTED_FOREGROUND="007"
-POWERLEVEL9K_BATTERY_LOW_VISUAL_IDENTIFIER_COLOR="black"
-POWERLEVEL9K_BATTERY_CHARGING_VISUAL_IDENTIFIER_COLOR="yellow"
-POWERLEVEL9K_BATTERY_CHARGED_VISUAL_IDENTIFIER_COLOR="007"
-POWERLEVEL9K_BATTERY_DISCONNECTED_VISUAL_IDENTIFIER_COLOR="green"
-# Disk_Usage
-#POWERLEVEL9K_DISK_USAGE_ONLY_WARNING=true
-POWERLEVEL9K_DISK_USAGE_WARNING_LEVEL=50
-POWERLEVEL9K_DISK_USAGE_CRITICAL_LEVEL=75
-POWERLEVEL9K_DISK_USAGE_NORMAL_BACKGROUND="black"
-POWERLEVEL9K_DISK_USAGE_NORMAL_FOREGROUND="007"
-POWERLEVEL9K_DISK_USAGE_WARNING_BACKGROUND="black"
-POWERLEVEL9K_DISK_USAGE_WARNING_FOREGROUND="yellow"
-POWERLEVEL9K_DISK_USAGE_CRITICAL_BACKGROUND="black"
-POWERLEVEL9K_DISK_USAGE_CRITICAL_FOREGROUND="red"
-# Ram
-POWERLEVEL9K_RAM_BACKGROUND="black"
-POWERLEVEL9K_RAM_FOREGROUND="007"
-POWERLEVEL9K_RAM_ELEMENTS=(ram_free)
-# Date and Time
-POWERLEVEL9K_TIME_FORMAT="%T"
-POWERLEVEL9K_TIME_BACKGROUND="black"
-POWERLEVEL9K_TIME_FOREGROUND="007"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Plugins
-plugins=(git virtualenv)
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
+
 source $ZSH/oh-my-zsh.sh
+
+# This loads nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
-    print -P "%F{33}▓▒░ %F{220}Installing DHARMA Initiative Plugin Manager (zdharma/zinit)…%f"
+    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
     command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
     command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
         print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
@@ -101,13 +45,35 @@ autoload -Uz _zinit
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
 zinit light-mode for \
-    zinit-zsh/z-a-patch-dl \
+    zinit-zsh/z-a-rust \
     zinit-zsh/z-a-as-monitor \
+    zinit-zsh/z-a-patch-dl \
     zinit-zsh/z-a-bin-gem-node
-
 ### End of Zinit's installer chunk
 
 # Plugins added by Zinit
 zplugin light zdharma/fast-syntax-highlighting
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
+
+# runs NVM USE if I enter in a dir that contains a .nvmrc
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
