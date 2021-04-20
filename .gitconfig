@@ -1,10 +1,10 @@
 [user]
-	name = Diogo "Mozão" Fonseca
-	email = devmozao@outloook.com.br
+	name = Diogo \"Mozão\" Fonseca
+	email = devmozao@outlook.com
 [core]
 	autocrlf = input
 [pull]
-	rebase = false
+	rebase = true
 [diff]
 	tool = vscode
 [merge]
@@ -13,3 +13,5 @@
 	cmd = code --wait $MERGED
 [difftool "vscode"]
 	cmd = code --wait --diff
+[credential]
+	helper = cache --timeout=28800000
