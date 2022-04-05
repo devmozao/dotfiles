@@ -10,10 +10,11 @@ Welcome to Pimp My Shell! This time, featuring [@devMozao](https://twitter.com/d
 
 ### SETUP
 
-- **OS Distro**: [Linux Mint](https://linuxmint.com)
+- **OS Distro Home a.k.a. Nevasca**: [Windows 11 with WSL Debian](https://docs.microsoft.com/pt-br/windows/wsl/install)
+- **OS Distro Work**: [Ubuntu](https://ubuntu.com/download)(unfortunately bcuz it's a corporate decision. otherwise was debian as well)
 - **OS Theme**: [Nord Theme](https://www.nordtheme.com)
-- **Terminal**: [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
-- **Terminal Font:** [Nerd Fonts](https://www.nerdfonts.com)
+- **Terminal**: [HyperJS](https://hyper.is)
+- **Terminal Font:** [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 - **Editor:** [VS Code](https://code.visualstudio.com)
 - **Editor Theme:** [Nord Theme](https://github.com/arcticicestudio/nord-visual-studio-code)
 - **Editor Font:** [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
