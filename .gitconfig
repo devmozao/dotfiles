@@ -1,17 +1,19 @@
 [user]
-	name = Diogo \"Mozão\" Fonseca
-	email = devmozao@outlook.com
+  name = Diogo \"Mozão\" Fonseca
+  email = devmozao@outlook.com
 [core]
-	autocrlf = input
+  autocrlf = input
 [pull]
-	rebase = true
+  rebase = true
 [diff]
-	tool = vscode
+  tool = vscode
 [merge]
-	tool = vscode
+  tool = vscode
 [mergetool "vscode"]
-	cmd = code --wait $MERGED
+  cmd = code --wait $MERGED
 [difftool "vscode"]
-	cmd = code --wait --diff
+  cmd = code --wait --diff \"$LOCAL\" \"$REMOTE\"
 [credential]
-	helper = cache --timeout=28800000
+  helper = cache --timeout=28800000
+[includeIf "gitdir:~/iteris/"]
+    path = ~/iteris/.gitconfig
