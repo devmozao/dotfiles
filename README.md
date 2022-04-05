@@ -10,8 +10,8 @@ Welcome to Pimp My Shell! This time, featuring [@devMozao](https://twitter.com/d
 
 ### SETUP
 
-- **OS Distro Home a.k.a. Nevasca**: [Windows 11 with WSL Debian](https://docs.microsoft.com/pt-br/windows/wsl/install)
-- **OS Distro Work**: [Ubuntu](https://ubuntu.com/download)(unfortunately bcuz it's a corporate decision. otherwise was debian as well)
+- **OS Distro Home**: [Windows 11 with WSL Debian](https://docs.microsoft.com/pt-br/windows/wsl/install)(a.k.a. Nevasca)
+- **OS Distro Work**: [Ubuntu](https://ubuntu.com/download)(unfortunately bcuz it's a corporate machine. otherwise it would be debian as well)
 - **OS Theme**: [Nord Theme](https://www.nordtheme.com)
 - **Terminal**: [HyperJS](https://hyper.is)
 - **Terminal Font:** [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
