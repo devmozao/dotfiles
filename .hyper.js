@@ -13,7 +13,7 @@ module.exports = {
 
     // font family with optional fallbacks
     // default: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-    fontFamily:  " 'JetBrains Mono', 'MesloLGS NF Bold', 'Ubuntu NF' ", 
+    fontFamily:  " 'JetBrainsMono Nerd Font', 'MesloLGS NF Bold', 'Ubuntu NF' ", 
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
