@@ -1,19 +1,29 @@
 [user]
   name = Diogo \"Mozão\" Fonseca
   email = devmozao@outlook.com
+	signingkey =
 [core]
   autocrlf = input
 [pull]
   rebase = true
-[diff]
-  tool = vscode
 [merge]
   tool = vscode
 [mergetool "vscode"]
   cmd = code --wait $MERGED
+[diff]
+  tool = vscode
 [difftool "vscode"]
-  cmd = code --wait --diff \"$LOCAL\" \"$REMOTE\"
+	cmd = code --wait --diff $LOCAL $REMOTE
 [credential]
   helper = cache --timeout=28800000
-[includeIf "gitdir:~/iteris/"]
-    path = ~/iteris/.gitconfig
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[diff "lockb"]
+	textconv = bun
+	binary = true
+[init]
+	defaultBranch = main
+[advice]
+	ignoredHook = false
