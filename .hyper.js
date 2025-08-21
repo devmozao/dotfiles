@@ -19,7 +19,7 @@ module.exports = {
         borderColor: '#333',
         css: '',
         termCSS: '',
-        workingDirectory: '',
+        workingDirectory: '~',
         showHamburgerMenu: true,
         showWindowControls: true,
         padding: '12px 14px',
@@ -44,7 +44,7 @@ module.exports = {
             lightCoral: '#F08080',
         },
         shell: 'wsl.exe',
-        shellArgs: ['-d', 'debian'],
+        shellArgs: ['-d', 'debian', '--cd', '~'],
         env: {},
         bell: 'SOUND',
         copyOnSelect: false,
@@ -65,4 +65,3 @@ module.exports = {
     localPlugins: [],
     keymaps: {},
 };
-//# sourceMappingURL=config-default.js.map
